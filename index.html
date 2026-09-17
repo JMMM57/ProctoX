@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Web - Entorno DEV</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🚀 DevCluster Web</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#vlan-info">Redes & VLANs</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="inicio" class="hero">
+      <h1>Entorno de Desarrollo Activo</h1>
+      <p>Servidor Nginx corriendo en la VLAN 20 (IP: 10.10.20.101)</p>
+      <button id="btn-status" class="btn-primary">Verificar Estado del Servidor</button>
+      
+      <div id="status-card" class="card hidden">
+        <p><strong>Estado:</strong> <span class="badge success">HTTP 200 OK</span></p>
+        <p><strong>Hora local VM:</strong> <span id="clock">--:--:--</span></p>
+      </div>
+    </section>
+
+    <section id="vlan-info" class="cards-grid">
+      <div class="card">
+        <h3>VLAN 20 - DEV</h3>
+        <p><strong>IP:</strong> 10.10.20.101</p>
+        <p>Ambiente de desarrollo y pruebas de integración.</p>
+      </div>
+      <div class="card">
+        <h3>VLAN 30 - QA</h3>
+        <p><strong>IP:</strong> 10.10.30.102</p>
+        <p>Servidor de pruebas de calidad y validación.</p>
+      </div>
+      <div class="card">
+        <h3>VLAN 40 - PROD</h3>
+        <p><strong>IP:</strong> 10.10.40.103</p>
+        <p>Servidor final de producción.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 - Proyecto de Redes y Sistemas Distribuidos</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
